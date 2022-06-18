@@ -1,14 +1,8 @@
 import { createStore } from 'vuex';
+import places from '@/store/modules/places';
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    places,
   },
 });
