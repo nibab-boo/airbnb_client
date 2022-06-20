@@ -1,5 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500&display=swap');
 @import 'variables';
+
+h1 {
+  font-size: 24px;
+  color: $purple;
+  font-weight: 600;
+}
+
+.category-title {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 14px;
+  font-weight: 500;
+}
+
+.top-title {
+  // height: calc(168px - 105px);
+  font-size: 14px;
+  width: 160px;
+  h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $red;
+    margin: 6px 0;
+  }
+  p {
+    color: black;
+    width: 84%;
+  }
+}
