@@ -9,6 +9,7 @@
         focus:outline-none
         p-2 w-full rounded-lg"
         placeholder="you@example.com"
+        v-model="value"
       />
     </div>
   </div>
@@ -17,6 +18,16 @@
 <script>
 export default {
   name: 'SearchBar',
+  data() {
+    return {
+      value: null,
+    };
+  },
+  watch: {
+    value(newValue) {
+      this.$emit('onInput', newValue);
+    },
+  },
 };
 
 </script>
