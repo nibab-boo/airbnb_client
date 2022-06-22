@@ -1,6 +1,6 @@
 // import axios from 'axios';
 
-const PLACES_URL = 'http://localhost:3000/api/v1/places';
+const PLACES_URL = 'https://airbnbclonebackend.herokuapp.com/api/v1/places';
 
 const state = {
   places: [],
@@ -20,7 +20,7 @@ const actions = {
   },
 };
 
-const mutations = {
+export const mutations = {
   SET_PLACES: (state, payload) => {
     state.places = payload;
   },

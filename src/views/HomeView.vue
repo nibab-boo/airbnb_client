@@ -7,63 +7,63 @@
     <button class="bg-slate-50 px-4 py-2 mr-2 rounded-3xl border border-gray-400">Guest</button>
     <button class="bg-slate-50 px-4 py-2 mr-2 rounded-3xl border border-gray-400">Filter</button>
   </div>
-  <h1 class="my-2" v-if="keyWordExists">What can we help you find?</h1>
-  <div
-    class="my-3"
-    v-if="keyWordExists"
-  >
-    <Splide :options="{ arrows: false,
-                        pagination: false,
-                        autoWidth: true,
-                        padding: { top: 10, bottom: 20 },
-                        direction: 'ltr',
-                        autoplay: false, }"
-      class="" aria-label="My Favorite Images">
-      <!-- <div class="flex"> -->
+  <div v-if="keyWordExists">
+    <h1 class="my-2">What can we help you find?</h1>
+    <div class="my-3">
+      <Splide :options="{ arrows: false,
+                          pagination: false,
+                          autoWidth: true,
+                          padding: { top: 10, bottom: 20 },
+                          direction: 'ltr',
+                          autoplay: false, }"
+        class="" aria-label="My Favorite Images">
+        <!-- <div class="flex"> -->
 
-      <SplideTrack class="splide__slide p-2 ">
-        <div class="rounded-xl overflow-hidden shadow-md"
-        style="min-width: 148px; height: 148px">
-          <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
-          alt="image">
-          <div class="category-title">Stays</div>
-        </div>
-      </SplideTrack>
-      <SplideTrack class="splide__slide p-2">
-        <div class="rounded-xl overflow-hidden shadow-md"
-        style="min-width: 148px; height: 148px">
-          <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
-          alt="image">
-          <div class="category-title">Stays</div>
-        </div>
-      </SplideTrack>
-      <SplideTrack class="splide__slide p-2">
-        <div class="rounded-xl overflow-hidden shadow-md"
-        style="min-width: 148px; height: 148px">
-          <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
-          alt="image">
-          <div class="category-title">Stays</div>
-        </div>
-      </SplideTrack>
-      <SplideTrack class="splide__slide p-2">
-        <div class="rounded-xl overflow-hidden shadow-md"
-        style="min-width: 148px; height: 148px">
-          <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
-          alt="image">
-          <div class="category-title">Stays</div>
-        </div>
-      </SplideTrack>
-      <SplideTrack class="splide__slide p-2">
-        <div class="rounded-xl overflow-hidden shadow-md"
-        style="min-width: 148px; height: 148px">
-          <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
-          alt="image">
-          <div class="category-title">Stays</div>
-        </div>
-      </SplideTrack>
-      <!-- </div> -->
-    </Splide>
+        <SplideTrack class="splide__slide p-2 ">
+          <div class="rounded-xl overflow-hidden shadow-md"
+          style="min-width: 148px; height: 148px">
+            <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+            alt="image">
+            <div class="category-title">Stays</div>
+          </div>
+        </SplideTrack>
+        <SplideTrack class="splide__slide p-2">
+          <div class="rounded-xl overflow-hidden shadow-md"
+          style="min-width: 148px; height: 148px">
+            <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+            alt="image">
+            <div class="category-title">Stays</div>
+          </div>
+        </SplideTrack>
+        <SplideTrack class="splide__slide p-2">
+          <div class="rounded-xl overflow-hidden shadow-md"
+          style="min-width: 148px; height: 148px">
+            <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+            alt="image">
+            <div class="category-title">Stays</div>
+          </div>
+        </SplideTrack>
+        <SplideTrack class="splide__slide p-2">
+          <div class="rounded-xl overflow-hidden shadow-md"
+          style="min-width: 148px; height: 148px">
+            <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+            alt="image">
+            <div class="category-title">Stays</div>
+          </div>
+        </SplideTrack>
+        <SplideTrack class="splide__slide p-2">
+          <div class="rounded-xl overflow-hidden shadow-md"
+          style="min-width: 148px; height: 148px">
+            <img width="148" height="100" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+            alt="image">
+            <div class="category-title">Stays</div>
+          </div>
+        </SplideTrack>
+        <!-- </div> -->
+      </Splide>
+    </div>
   </div>
+
   <div v-if="keyWordExists">
     <h1 class="mt-4"> Top-rated Experiences</h1>
     <p class="my-1">Book activities led by local hosts on your trip</p>
@@ -86,8 +86,49 @@
       </SliderComponent>
     </div>
   </div>
+  <!-- Filtered list -->
   <div class="my-3">
-    <h4>HelloWorld</h4>
+    <h1 class="my-2">300+ places to stay</h1>
+    <div class="flex justify-start flex-wrap">
+      <div
+        class="filtered-card my-3"
+      >
+        <img class="w-100" height="105" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+        alt="image">
+        <div class="filtered-description-box pt-2">
+          <div class="flex justify-between">
+            <div>
+              <strong id="title">SUPERHOST</strong>
+              <p class="gray inline-block">Milan</p>
+            </div>
+            <div>
+              ⭐4.93 <span class="gray">(850)</span>
+            </div>
+          </div>
+          <p class="text-lg py-1">Beautiful flat in Milano Center!!!</p>
+          <p class="text-lg"><strong>$100</strong> / night</p>
+        </div>
+      </div>
+      <div
+        class="filtered-card my-3"
+      >
+        <img class="w-100" height="105" src="https://media.istockphoto.com/photos/making-healthy-meal-picture-id1162184637?k=20&m=1162184637&s=612x612&w=0&h=NMY_uqGlL61zdGcFx5ZKZihwe4SxLYSy6Oa02rOJnGs="
+        alt="image">
+        <div class="filtered-description-box pt-2">
+          <div class="flex justify-between">
+            <div>
+              <strong id="title">SUPERHOST</strong>
+              <p class="gray inline-block">Milan</p>
+            </div>
+            <div>
+              ⭐4.93 <span class="green">(850)</span>
+            </div>
+          </div>
+          <p class="text-lg py-1">Beautiful flat in Milano Center!!!</p>
+          <p class="text-lg"><strong>$100</strong> / night</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -140,4 +181,27 @@ export default {
 </script>
 <style lang="css" scoped>
 @import '@splidejs/vue-splide/css';
+</style>
+<style lang="scss" scoped>
+@import '@/assets/styles/variables.scss';
+.filtered-card {
+  min-width: 100%;
+  max-width: 400px;
+  img {
+    border-radius: 6px;
+  }
+  #title {
+    padding: 1px 2px;
+    color: $Dgray;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid $Dgray;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  // .address {
+  //   color: $gray;
+  //   display: inline-block;
+  // }
+}
 </style>
